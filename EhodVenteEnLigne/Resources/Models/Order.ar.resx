@@ -132,4 +132,7 @@
   <data name="ErrorMissingZipCode" xml:space="preserve">
     <value>الرجاء إدخال الرمز البريدي</value>
   </data>
+  <data name="CartEmpty" xml:space="preserve">
+    <value>Le panier est vide !!!</value>
+  </data>
 </root>

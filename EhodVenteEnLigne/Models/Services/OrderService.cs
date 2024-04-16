@@ -58,6 +58,38 @@ namespace EhodBoutiqueEnLigne.Models.Services
             return orderToAdd;
         }
 
+        public List<string> CheckOrderModelErrors(OrderViewModel order)
+        {
+            List<string> modelErrors = new List<string>();
+
+            if (string.IsNullOrWhiteSpace(order.Name))
+            {
+                modelErrors.Add("ErrorMissingName");
+            }
+
+            if (string.IsNullOrWhiteSpace(order.Address))
+            {
+                modelErrors.Add("ErrorMissingAddress");
+            }
+
+            if (string.IsNullOrWhiteSpace(order.City))
+            {
+                modelErrors.Add("ErrorMissingCity");
+            }
+
+            if (string.IsNullOrWhiteSpace(order.Zip))
+            {
+                modelErrors.Add("ErrorMissingZipCode");
+            }
+
+            if (string.IsNullOrWhiteSpace(order.Country))
+            {
+                modelErrors.Add("ErrorMissingCountry");
+            }
+
+            return modelErrors;
+        }
+
         private void UpdateInventory()
         {
             _productService.UpdateProductQuantities();

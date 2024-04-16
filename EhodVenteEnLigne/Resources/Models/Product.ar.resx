@@ -132,4 +132,5 @@
   <data name="ErrorStockValue" xml:space="preserve">
     <value>يجب أن تكون قيمة السهم رقمًا أكبر من الصفر</value>
   </data>
+  
 </root>

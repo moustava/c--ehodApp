@@ -1,6 +1,9 @@
 ﻿@model EhodBoutiqueEnLigne.Models.ViewModels.OrderViewModel
 
 <h2>@Localizer["OrderTitle"]</h2>
+@if(ViewData.ModelState.ContainsKey("CartEmpty")){
+    <div class="text-danger">@Localizer["CartEmpty"]</div>
+}
 <form asp-action="Index" method="post">
     <h3>@Localizer["ShipTo"]</h3>
     <div class="mb-3">

@@ -132,4 +132,5 @@
   <data name="ErrorStockValue" xml:space="preserve">
     <value>The stock value must be a number greater than zero</value>
   </data>
+  
 </root>

@@ -150,4 +150,7 @@
   <data name="Zip" xml:space="preserve">
     <value>Zip</value>
   </data>
+  <data name="CartEmpty" xml:space="preserve">
+    <value>Le panier est vide !!!</value>
+  </data>
 </root>

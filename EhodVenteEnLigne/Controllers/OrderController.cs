@@ -30,7 +30,7 @@ namespace EhodBoutiqueEnLigne.Controllers
         {
             if (!((Cart) _cart).Lines.Any())
             {
-                ModelState.AddModelError("", _localizer["CartEmpty"]);
+                ModelState.AddModelError("CartEmpty", _localizer["CartEmpty"]);
             }
             if (ModelState.IsValid)
             {
